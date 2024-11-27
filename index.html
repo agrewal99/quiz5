@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2SLGBTQ+ Oncology Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    fieldset {
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin: 5px 0;
+    }
+    .button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 20px;
+      text-align: center;
+    }
+    .explanation {
+      margin-top: 10px;
+      background-color: #f8f8f8;
+      padding: 8px;
+      border-left: 3px solid #007bff;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>2SLGBTQ+ Oncology Quiz</h1>
+    <form id="quizForm">
+
+      <!-- Question 1 -->
+      <fieldset data-answer="1">
+        <legend>1. What does 2S in 2SLGBTQ+ stand for?</legend>
+        <label><input type="radio" name="q1" value="1">Two Spirit</label>
+        <label><input type="radio" name="q1" value="2">Two Souls</label>
+        <label><input type="radio" name="q1" value="3">Two Sexualities</label>
+        <label><input type="radio" name="q1" value="4">Two Sentiments</label>
+        <p class="explanation">Correct Answer: 1. 2S stands for Two Spirit, a term used by Indigenous Peoples to describe a gender identity that is neither (or both) male and female.</p>
+      </fieldset>
+
+      <!-- Question 2 -->
+      <fieldset data-answer="2">
+        <legend>2. Which term is often used as an umbrella identifier for non-specific sexual orientation?</legend>
+        <label><input type="radio" name="q2" value="1">Gay</label>
+        <label><input type="radio" name="q2" value="2">Queer</label>
+        <label><input type="radio" name="q2" value="3">Lesbian</label>
+        <label><input type="radio" name="q2" value="4">Pansexual</label>
+        <p class="explanation">Correct Answer: 2. The term "Queer" is often used as a reclaimed, umbrella term for non-specific sexual orientation.</p>
+      </fieldset>
+
+      <!-- Question 3 -->
+      <fieldset data-answer="4">
+        <legend>3. What is one of the main barriers faced by the 2SLGBTQ+ community in accessing oncology care?</legend>
+        <label><input type="radio" name="q3" value="1">Lack of doctors</label>
+        <label><input type="radio" name="q3" value="2">Geographical limitations</label>
+        <label><input type="radio" name="q3" value="3">Limited medical technology</label>
+        <label><input type="radio" name="q3" value="4">Stigma and lack of education</label>
+        <p class="explanation">Correct Answer: 4. The 2SLGBTQ+ community often faces stigma and a lack of education from healthcare providers, which can hinder access to oncology care.</p>
+      </fieldset>
+
+      <!-- Question 4 -->
+      <fieldset data-answer="3">
+        <legend>4. Which of the following is true about the COM-B model in the context of 2SLGBTQ+ oncology?</legend>
+        <label><input type="radio" name="q4" value="1">It focuses only on physical capabilities</label>
+        <label><input type="radio" name="q4" value="2">It is unrelated to healthcare</label>
+        <label><input type="radio" name="q4" value="3">It includes capability, opportunity, and motivation</label>
+        <label><input type="radio" name="q4" value="4">It is used to determine chemotherapy dosage</label>
+        <p class="explanation">Correct Answer: 3. The COM-B model includes components such as capability, opportunity, and motivation, which are crucial in behavior change, including healthcare practices.</p>
+      </fieldset>
+
+      <!-- Question 5 -->
+      <fieldset data-answer="2">
+        <legend>5. Why is it important to use neutral terms like "partner" instead of assuming someone's relationship status?</legend>
+        <label><input type="radio" name="q5" value="1">It is faster</label>
+        <label><input type="radio" name="q5" value="2">It avoids making incorrect assumptions about someone's sexual orientation or gender identity</label>
+        <label><input type="radio" name="q5" value="3">It sounds more professional</label>
+        <label><input type="radio" name="q5" value="4">It is legally required</label>
+        <p class="explanation">Correct Answer: 2. Using neutral terms helps avoid incorrect assumptions about an individual's sexual orientation or gender identity.</p>
+      </fieldset>
+
+      <!-- Question 6 -->
+      <fieldset data-answer="1">
+        <legend>6. What does "non-binary" mean?</legend>
+        <label><input type="radio" name="q6" value="1">A person who identifies with a gender other than strictly male or female</label>
+        <label><input type="radio" name="q6" value="2">A person who changes gender daily</label>
+        <label><input type="radio" name="q6" value="3">A person who has no gender at all</label>
+        <label><input type="radio" name="q6" value="4">A person who is both male and female simultaneously</label>
+        <p class="explanation">Correct Answer: 1. Non-binary refers to someone who does not strictly identify as male or female, but rather falls outside the traditional binary gender categories.</p>
+      </fieldset>
+
+      <!-- Question 7 -->
+      <fieldset data-answer="2">
+        <legend>7. Which of the following is a common health risk for 2SLGBTQ+ populations related to smoking?</legend>
+        <label><input type="radio" name="q7" value="1">Low blood pressure</label>
+        <label><input type="radio" name="q7" value="2">Higher rates of lung cancer</label>
+        <label><input type="radio" name="q7" value="3">Lower immune response</label>
+        <label><input type="radio" name="q7" value="4">Increased appetite</label>
+        <p class="explanation">Correct Answer: 2. The 2SLGBTQ+ population has higher rates of lung cancer, partly due to higher rates of smoking within the community.</p>
+      </fieldset>
+
+      <!-- Question 8 -->
+      <fieldset data-answer="4">
+        <legend>8. What is the primary focus of the COM-B model?</legend>
+        <label><input type="radio" name="q8" value="1">Disease diagnosis</label>
+        <label><input type="radio" name="q8" value="2">Surgical interventions</label>
+        <label><input type="radio" name="q8" value="3">Developing pharmaceuticals</label>
+        <label><input type="radio" name="q8" value="4">Understanding behavior change</label>
+        <p class="explanation">Correct Answer: 4. The COM-B model is used to understand behavior change by considering Capability, Opportunity, and Motivation.</p>
+      </fieldset>
+
+      <!-- Question 9 -->
+      <fieldset data-answer="3">
+        <legend>9. What should healthcare providers avoid when addressing body parts?</legend>
+        <label><input type="radio" name="q9" value="1">Using medical terms</label>
+        <label><input type="radio" name="q9" value="2">Using gender-neutral language</label>
+        <label><input type="radio" name="q9" value="3">Referring to body parts as gendered, such as "male parts"</label>
+        <label><input type="radio" name="q9" value="4">Asking patients for clarification</label>
+        <p class="explanation">Correct Answer: 3. Referring to body parts as gendered can be dysphoric and hostile to transgender, intersex, Two Spirit, agender, genderqueer, and non-binary individuals.</p>
+      </fieldset>
+
+      <!-- Question 10 -->
+      <fieldset data-answer="1">
+        <legend>10. Why might transgender individuals feel gender dysphoria in reproductive healthcare?</legend>
+        <label><input type="radio" name="q10" value="1">Healthcare materials often assume cisgender identity</label>
+        <label><input type="radio" name="q10" value="2">They do not need reproductive healthcare</label>
+        <label><input type="radio" name="q10" value="3">It is illegal for them to receive care</label>
+        <label><input type="radio" name="q10" value="4">There are no medical professionals available</label>
+        <p class="explanation">Correct Answer: 1. Healthcare materials often assume cisgender identity, which can cause transgender individuals to experience gender dysphoria.</p>
+      </fieldset>
+
+       <!-- Question 11 -->
+       <fieldset data-answer="2">
+        <legend>11. Which population is often overlooked in cervical cancer screening?</legend>
+        <label><input type="radio" name="q11" value="1">Cisgender men</label>
+        <label><input type="radio" name="q11" value="2">Transgender men</label>
+        <label><input type="radio" name="q11" value="3">Children</label>
+        <label><input type="radio" name="q11" value="4">Elderly women</label>
+        <p class="explanation">Correct Answer: 2. Transgender men are often overlooked in cervical cancer screening, especially if they still have a cervix.</p>
+      </fieldset>
+
+      <!-- Question 12 -->
+      <fieldset data-answer="3">
+        <legend>12. What should healthcare providers do if they are unsure of a patient's pronouns?</legend>
+        <label><input type="radio" name="q12" value="1">Guess based on appearance</label>
+        <label><input type="radio" name="q12" value="2">Use only "he" or "she"</label>
+        <label><input type="radio" name="q12" value="3">Ask the patient respectfully</label>
+        <label><input type="radio" name="q12" value="4">Avoid using pronouns altogether</label>
+        <p class="explanation">Correct Answer: 3. Healthcare providers should ask the patient respectfully if they are unsure of the patient's pronouns.</p>
+      </fieldset>
+
+      <!-- Question 13 -->
+      <fieldset data-answer="1">
+        <legend>13. What is a significant factor contributing to higher lung cancer rates in the 2SLGBTQ+ community?</legend>
+        <label><input type="radio" name="q13" value="1">Higher smoking rates</label>
+        <label><input type="radio" name="q13" value="2">Genetics</label>
+        <label><input type="radio" name="q13" value="3">Air pollution</label>
+        <label><input type="radio" name="q13" value="4">Lack of exercise</label>
+        <p class="explanation">Correct Answer: 1. Higher smoking rates among the 2SLGBTQ+ community contribute significantly to higher lung cancer rates.</p>
+      </fieldset>
+
+      <!-- Question 14 -->
+      <fieldset data-answer="4">
+        <legend>14. Which of the following cancers is linked to HPV in the 2SLGBTQ+ population?</legend>
+        <label><input type="radio" name="q14" value="1">Skin cancer</label>
+        <label><input type="radio" name="q14" value="2">Lung cancer</label>
+        <label><input type="radio" name="q14" value="3">Bone cancer</label>
+        <label><input type="radio" name="q14" value="4">Anal cancer</label>
+        <p class="explanation">Correct Answer: 4. Anal cancer is one of the cancers linked to HPV, particularly among certain groups in the 2SLGBTQ+ population.</p>
+      </fieldset>
+
+      <!-- Question 15 -->
+      <fieldset data-answer="3">
+        <legend>15. Why is it important for healthcare providers to use gender-neutral language?</legend>
+        <label><input type="radio" name="q15" value="1">To make communication faster</label>
+        <label><input type="radio" name="q15" value="2">To avoid confusion</label>
+        <label><input type="radio" name="q15" value="3">To avoid making incorrect assumptions about gender identity</label>
+        <label><input type="radio" name="q15" value="4">To follow hospital rules</label>
+        <p class="explanation">Correct Answer: 3. Using gender-neutral language helps healthcare providers avoid making incorrect assumptions about a patient's gender identity.</p>
+      </fieldset>
+
+      <!-- Question 16 -->
+      <fieldset data-answer="2">
+        <legend>16. What is an important aspect of providing cancer care to 2SLGBTQ+ individuals?</legend>
+        <label><input type="radio" name="q16" value="1">Avoiding discussions about gender</label>
+        <label><input type="radio" name="q16" value="2">Providing inclusive and affirming care</label>
+        <label><input type="radio" name="q16" value="3">Only treating physical symptoms</label>
+        <label><input type="radio" name="q16" value="4">Ignoring pronouns</label>
+        <p class="explanation">Correct Answer: 2. Providing inclusive and affirming care is crucial for the well-being of 2SLGBTQ+ individuals undergoing cancer treatment.</p>
+      </fieldset>
+
+      <!-- Question 17 -->
+      <fieldset data-answer="1">
+        <legend>17. Which group is at increased risk for HPV-related cancers?</legend>
+        <label><input type="radio" name="q17" value="1">Men who have sex with men</label>
+        <label><input type="radio" name="q17" value="2">Children</label>
+        <label><input type="radio" name="q17" value="3">Elderly women</label>
+        <label><input type="radio" name="q17" value="4">People with no sexual partners</label>
+        <p class="explanation">Correct Answer: 1. Men who have sex with men are at increased risk for HPV-related cancers.</p>
+      </fieldset>
+
+      <!-- Question 18 -->
+      <fieldset data-answer="4">
+        <legend>18. What is a major barrier for transgender individuals seeking healthcare?</legend>
+        <label><input type="radio" name="q18" value="1">Lack of interest in healthcare</label>
+        <label><input type="radio" name="q18" value="2">Too many healthcare options</label>
+        <label><input type="radio" name="q18" value="3">Lack of transportation</label>
+        <label><input type="radio" name="q18" value="4">Stigma and discrimination</label>
+        <p class="explanation">Correct Answer: 4. Stigma and discrimination are significant barriers for transgender individuals seeking healthcare.</p>
+      </fieldset>
+
+      <!-- Question 19 -->
+      <fieldset data-answer="2">
+        <legend>19. How can healthcare providers support 2SLGBTQ+ cancer patients effectively?</legend>
+        <label><input type="radio" name="q19" value="1">By ignoring their gender identity</label>
+        <label><input type="radio" name="q19" value="2">By using inclusive language and respecting pronouns</label>
+        <label><input type="radio" name="q19" value="3">By avoiding discussions about cancer</label>
+        <label><input type="radio" name="q19" value="4">By only focusing on physical symptoms</label>
+        <p class="explanation">Correct Answer: 2. Using inclusive language and respecting pronouns are key ways healthcare providers can support 2SLGBTQ+ cancer patients.</p>
+      </fieldset>
+
+      <!-- Question 20 -->
+      <fieldset data-answer="3">
+        <legend>20. Why is HPV vaccination important for 2SLGBTQ+ individuals?</legend>
+        <label><input type="radio" name="q20" value="1">It prevents all types of cancer</label>
+        <label><input type="radio" name="q20" value="2">It is only for cisgender individuals</label>
+        <label><input type="radio" name="q20" value="3">It helps prevent HPV-related cancers, which are prevalent in the 2SLGBTQ+ community</label>
+        <label><input type="radio" name="q20" value="4">It is optional and not recommended</label>
+        <p class="explanation">Correct Answer: 3. HPV vaccination helps prevent HPV-related cancers, which are more prevalent in the 2SLGBTQ+ community.</p>
+      </fieldset>
+
+      <!-- Question 21 -->
+      <fieldset data-answer="4">
+        <legend>21. What is the impact of stigma on 2SLGBTQ+ individuals accessing cancer care?</legend>
+        <label><input type="radio" name="q21" value="1">It has no impact</label>
+        <label><input type="radio" name="q21" value="2">It makes accessing care easier</label>
+        <label><input type="radio" name="q21" value="3">It results in better care</label>
+        <label><input type="radio" name="q21" value="4">It leads to delayed or avoided healthcare services</label>
+        <p class="explanation">Correct Answer: 4. Stigma can lead to delayed or avoided healthcare services among 2SLGBTQ+ individuals, affecting their cancer outcomes.</p>
+      </fieldset>
+
+      <!-- Question 22 -->
+      <fieldset data-answer="1">
+        <legend>22. What should healthcare providers avoid when discussing reproductive health with transgender individuals?</legend>
+        <label><input type="radio" name="q22" value="1">Assuming gender identity based on body parts</label>
+        <label><input type="radio" name="q22" value="2">Using neutral language</label>
+        <label><input type="radio" name="q22" value="3">Asking for preferred terms</label>
+        <label><input type="radio" name="q22" value="4">Respecting privacy</label>
+        <p class="explanation">Correct Answer: 1. Healthcare providers should avoid assuming gender identity based on body parts, as this can be distressing for transgender individuals.</p>
+      </fieldset>
+
+      <!-- Question 23 -->
+      <fieldset data-answer="3">
+        <legend>23. What is a key approach to making cancer care more inclusive for 2SLGBTQ+ patients?</legend>
+        <label><input type="radio" name="q23" value="1">Using only medical jargon</label>
+        <label><input type="radio" name="q23" value="2">Ignoring the patient's preferences</label>
+        <label><input type="radio" name="q23" value="3">Providing culturally competent care</label>
+        <label><input type="radio" name="q23" value="4">Assuming all patients have the same needs</label>
+        <p class="explanation">Correct Answer: 3. Providing culturally competent care is crucial to making cancer care more inclusive for 2SLGBTQ+ patients.</p>
+      </fieldset>
+
+      <!-- Question 24 -->
+      <fieldset data-answer="2">
+        <legend>24. How can healthcare providers create a welcoming environment for 2SLGBTQ+ individuals?</legend>
+        <label><input type="radio" name="q24" value="1">By avoiding any discussions about identity</label>
+        <label><input type="radio" name="q24" value="2">By using inclusive signage and forms</label>
+        <label><input type="radio" name="q24" value="3">By making assumptions about their identity</label>
+        <label><input type="radio" name="q24" value="4">By ignoring patient preferences</label>
+        <p class="explanation">Correct Answer: 2. Using inclusive signage and forms helps create a welcoming environment for 2SLGBTQ+ individuals in healthcare settings.</p>
+      </fieldset>
+
+      <!-- Question 25 -->
+      <fieldset data-answer="1">
+        <legend>25. What should healthcare providers do if a 2SLGBTQ+ patient expresses discomfort during a procedure?</legend>
+        <label><input type="radio" name="q25" value="1">Acknowledge their discomfort and adjust care accordingly</label>
+        <label><input type="radio" name="q25" value="2">Ignore their concerns</label>
+        <label><input type="radio" name="q25" value="3">Tell them it's normal and proceed</label>
+        <label><input type="radio" name="q25" value="4">Refuse to continue treatment</label>
+        <p class="explanation">Correct Answer: 1. Healthcare providers should acknowledge a patient's discomfort and adjust care to ensure a supportive and respectful experience.</p>
+      </fieldset>
+
+    </form>
+    <button class="button" id="submitQuizButton">Submit Quiz</button>
+    <div id="result"></div>
+  </div>
+  <script>
+    document.getElementById('submitQuizButton').addEventListener('click', submitQuiz);
+
+    function submitQuiz() {
+      const fieldsets = document.querySelectorAll('fieldset');
+      let score = 0;
+
+      fieldsets.forEach((fieldset, index) => {
+        const questionName = `q${index + 1}`;
+        const selected = document.querySelector(`input[name="${questionName}"]:checked`);
+        const correctAnswer = parseInt(fieldset.getAttribute('data-answer'));
+        const explanation = fieldset.querySelector('.explanation');
+
+        if (selected) {
+          if (parseInt(selected.value) === correctAnswer) {
+            score++;
+            selected.parentElement.style.border = '2px solid green';
+          } else {
+            selected.parentElement.style.border = '2px solid red';
+          }
+          explanation.style.display = 'block';
+        } else {
+          explanation.textContent += " (Unanswered)";
+          explanation.style.display = 'block';
+        }
+      });
+
+      document.getElementById('result').textContent = `You scored ${score} out of ${fieldsets.length}!`;
+    }
+  </script>
+</body>
+</html>
